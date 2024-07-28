@@ -12,7 +12,7 @@
         .navbar-brand {
             font-size: 30px;
             padding-left: 15px;
-            padding-top: 10px;
+            padding-top: 5px;
             font-family: 'Fanwood Text', serif;
             font-weight: bold;
         }
@@ -93,7 +93,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">DailyBlogs</a>
+            <a class="navbar-brand" href="#">Estate</a>
             <button class="navbar-toggler profile-btn" type="button" data-bs-toggle="collapse" data-bs-target="#basic-navbar-nav" aria-controls="basic-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <img src="<?php echo $_SESSION['profileImage']; ?>" alt="" class="profile-img">
@@ -102,9 +102,9 @@
                 <div class="d-flex flex-column flex-lg-row w-100 align-items-center justify-content-end">
                     <ul class="navbar-nav nav-links d-flex flex-row justify-content-space-around">
                         <?php if ($_SESSION['role'] == 'admin') { ?>
-                            <li class="nav-item ">
+                            <!-- <li class="nav-item ">
                                 <a class="nav-link" href="#" data-url="/website/admin.php">Admin</a>
-                            </li>
+                            </li> -->
                         <?php } ?>
                         <li class="nav-item ">
                             <a class="nav-link" href="#" data-url="/website/homepage.php">Home</a>

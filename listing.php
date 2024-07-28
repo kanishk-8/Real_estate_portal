@@ -40,7 +40,7 @@ require_once 'session.php';
 <body>
     <div class="container">
         <div class="blogpage">
-            <h1>this is blog</h1>
+            <h1>List Property</h1>
         </div>
 
     </div>

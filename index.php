@@ -144,12 +144,12 @@
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>Welcome Back!</h1>
-                    <p>Already a part of our community? Sign in with your credentials to continue</p>
+                    <p>Already a part of our community? Sign in with your credentials to continue exploring your house of dream</p>
                     <button class="hidden" id="showSignIn">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>New to dailyblogs? Create an account and become part of our community</p>
+                    <h1>Hey, Folks!</h1>
+                    <p>New to Estate? Create an account and become part of our community and explore your house of dream</p>
                     <button class="hidden" id="showSignUp">Sign Up</button>
                 </div>
             </div>

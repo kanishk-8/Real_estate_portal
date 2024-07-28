@@ -1,5 +1,5 @@
 <?php
-
+// create a database first in phpmyadmin than use this code, there is no database it will not run
 $mysqli = new mysqli('localhost', 'websiteprac', 'kk222004', 'websitepracdb');
 if ($mysqli->connect_error) {
     echo 'Connection error: ' . $mysqli->connect_error;

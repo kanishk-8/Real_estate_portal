@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="ih7oZZxGYnWFIGN4SHNh" name="Page-1">
+        <mxGraphModel dx="1028" dy="419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="385" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="310" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="signup form&lt;br&gt;random salt1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="65" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="login form&lt;br&gt;random salt2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="65" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="if we save password with random salt1 in database then we can not use random salt2 for verification while login" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="80" y="200" width="250" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="if we use random salt2 for verification then we cannot store password with salt1 in database" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="450" y="190" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="form handler" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="345" y="150" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="database" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="350" width="80" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

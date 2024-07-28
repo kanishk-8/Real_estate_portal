@@ -113,6 +113,9 @@
                             <a class="nav-link" href="#" data-url="/website/blog.php">Blog</a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="#" data-url="/website/messages.php">Message</a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link acc-link" href="#" data-url="/website/account.php">Account</a>
                         </li>
                     </ul>

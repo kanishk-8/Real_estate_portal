@@ -18,42 +18,42 @@ body {
 
 .container {
   background-color: #fff;
-  border-radius: 20px; /* Reduced border radius */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 90%; /* Reduced width for better mobile fit */
+  width: 768px;
   max-width: 100%;
   min-height: 480px;
 }
 
 .container p {
-  font-size: 16px; /* Increased for better readability */
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0.3px;
-  margin: 15px 0; /* Reduced margin */
+  margin: 20px 0;
   color: #000;
 }
 
 .container span {
-  font-size: 14px; /* Increased font size */
+  font-size: 12px;
   color: #000;
 }
 
 .container a {
   color: #000;
-  font-size: 14px; /* Increased font size */
+  font-size: 13px;
   text-decoration: none;
-  margin: 10px 0; /* Reduced margin */
+  margin: 15px 0 10px;
 }
 
 .container button {
   background-color: #000;
   color: #fff;
-  font-size: 14px; /* Increased font size for better touch interaction */
-  padding: 10px 30px; /* Reduced padding */
+  font-size: 12px;
+  padding: 10px 45px;
   border: 1px solid transparent;
-  border-radius: 6px; /* Reduced border radius */
+  border-radius: 8px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -72,7 +72,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px; /* Reduced padding */
+  padding: 0 40px;
   height: 100%;
 }
 
@@ -80,9 +80,9 @@ body {
   background-color: #eee;
   border: none;
   margin: 8px 0;
-  padding: 8px 12px; /* Reduced padding */
-  font-size: 14px; /* Increased font size for better readability */
-  border-radius: 6px; /* Reduced border radius */
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
   width: 100%;
   outline: none;
   color: #000;
@@ -140,13 +140,13 @@ body {
   height: 100%;
   overflow: hidden;
   transition: all 0.6s ease-in-out;
-  border-radius: 100px 0 0 50px; /* Adjusted border radius */
+  border-radius: 150px 0 0 100px;
   z-index: 1000;
 }
 
 .container.active .toggle-container {
   transform: translateX(-100%);
-  border-radius: 0 100px 50px 0; /* Adjusted border radius */
+  border-radius: 0 150px 100px 0;
 }
 
 .toggle {
@@ -173,13 +173,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px; /* Reduced padding */
+  padding: 0 30px;
   text-align: center;
   top: 0;
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-
 .toggle-panel p {
   color: white;
 }

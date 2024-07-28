@@ -110,7 +110,7 @@
                             <a class="nav-link" href="#" data-url="/website/homepage.php">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#" data-url="/website/blog.php">Blog</a>
+                            <a class="nav-link" href="#" data-url="/website/listing.php">listing</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#" data-url="/website/messages.php">Message</a>

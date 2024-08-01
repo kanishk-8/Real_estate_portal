@@ -26,15 +26,15 @@
             background: none;
             padding: 0;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             background-color: #fff;
             box-shadow: #fff 0 0 10px;
         }
 
         .profile-img {
             border-radius: 50%;
-            height: 40px;
+            height: 50px;
             object-fit: cover;
         }
 

@@ -23,3 +23,13 @@ $mysqli->query("CREATE TABLE IF NOT EXISTS users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (role_id) REFERENCES roles(id)
 );");
+
+// Create 'listings' table
+$mysqli->query("CREATE TABLE IF NOT EXISTS house_listings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    heading VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL
+);");

@@ -27,6 +27,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             $_SESSION['profileImage'] = $userdetails['profileImage'];
             $_SESSION['username'] = $userdetails['username'];
             $_SESSION['role'] = $userdetails['role_name'];
+            $_SESSION['id'] = $userdetails['id'];
             $_SESSION['loginstring'] = hash('sha512', $email . rand());
 
             if ($_SESSION['role'] == 'admin') {

@@ -1,11 +1,5 @@
 <?php
 require_once 'session.php';
-if (!isset($_SESSION['login']) || $_SESSION['role'] !== 'admin') {
-    session_unset();
-    session_destroy();
-    header('Location: index.php');
-    exit();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,29 +9,98 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] !== 'admin') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CureTech</title>
     <style>
-        .card-holder {
-            display: flex;
-            justify-content: space-around;
-            align-items: start;
-            padding-top: 50px;
-            height: 100vh;
+        body {
             margin: 0;
-            background-color: #f4f4f4;
+            padding: 0;
         }
 
-        .card-img-top {
-            height: 150px;
+        .houselistings {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .houseinfo {
+            display: flex;
+            justify-content: start;
+            padding: 20px;
+            width: 90%;
+            border-radius: 30px;
+            align-items: center;
+            background-color: black;
+            height: auto;
+            flex-direction: column;
+            color: white;
+        }
+
+
+
+        .details-map {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            padding: 10px;
+        }
+
+        .rounded-map {
+            border-radius: 30px;
+        }
+
+        .priceinfo {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .info {
+            text-align: start;
+            margin-right: 20px;
+        }
+
+        .houseimg {
+            border-radius: 30px;
+            width: 97%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .listings {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .listing-item {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .listing-item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
+    <?php include 'fetch_listings.php'; ?>
 
-    <div>
-        <h1>Wellcome <?php echo $_SESSION['email']; ?> </h1>
-        <h1>this is admin</h1>
-    </div>
+    <script>
+
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

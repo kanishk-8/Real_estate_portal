@@ -25,7 +25,7 @@ require_once 'session.php';
             display: flex;
             justify-content: start;
             padding: 20px;
-            width: 80%;
+            width: 90%;
             border-radius: 30px;
             align-items: center;
             background-color: black;
@@ -39,8 +39,8 @@ require_once 'session.php';
         .details-map {
             width: 100%;
             display: flex;
-            justify-content: end;
-            align-content: end;
+            justify-content: space-between;
+            align-content: space-between;
             padding: 10px;
         }
 
@@ -48,7 +48,11 @@ require_once 'session.php';
             border-radius: 30px;
         }
 
-
+        .priceinfo {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
 
         .info {
             text-align: start;
@@ -57,10 +61,13 @@ require_once 'session.php';
 
         .houseimg {
             border-radius: 30px;
-            width: 100%;
+            width: 97%;
             max-height: 400px;
             object-fit: cover;
-
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
         }
 
         .listings {

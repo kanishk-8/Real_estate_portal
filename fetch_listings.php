@@ -7,13 +7,14 @@ $result = $mysqli->query($sql);
 while ($row = $result->fetch_assoc()) {
     echo "<div class='houselistings'>";
     echo "<div class='houseinfo'>";
-    echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
+    echo "<h1>" . htmlspecialchars($row['title']) . "</h1>";
     if ($row['image']) {
         $image = htmlspecialchars($row['image']);
-        echo "<img class ='houseimg' src='houseimg/$image' alt='Property Image'>";
+        echo "<img class ='houseimg' src='$image' alt='Property Image'>";
     }
     echo "<div class='details-map'> ";
     echo "<div class='info'> ";
+    echo "<p class='priceinfo'>Rs. " . htmlspecialchars($row['price']) . "</p>";
     echo "<p>" . htmlspecialchars($row['description']) . "</p>";
 
     echo "</div>";

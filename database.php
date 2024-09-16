@@ -24,12 +24,26 @@ $mysqli->query("CREATE TABLE IF NOT EXISTS users (
     FOREIGN KEY (role_id) REFERENCES roles(id)
 );");
 
-// Create 'listings' table
+// Modify 'listings' table to include 'user_id' and 'price'
 $mysqli->query("CREATE TABLE IF NOT EXISTS house_listings (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    heading VARCHAR(255) NOT NULL,
+    user_id INT NOT NULL,
     title VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
     image VARCHAR(255) NOT NULL,
-    location VARCHAR(255) NOT NULL
+    location VARCHAR(255) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);");
+// Create 'messages' table
+$mysqli->query("CREATE TABLE IF NOT EXISTS messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_id INT NOT NULL,
+    recipient_id INT NOT NULL,
+    property_id INT NOT NULL,
+    message TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (sender_id) REFERENCES users(id),
+    FOREIGN KEY (recipient_id) REFERENCES users(id),
+    FOREIGN KEY (property_id) REFERENCES house_listings(id)
 );");

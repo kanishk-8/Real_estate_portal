@@ -102,9 +102,9 @@
                 <div class="d-flex flex-column flex-lg-row w-100 align-items-center justify-content-end">
                     <ul class="navbar-nav nav-links d-flex flex-row justify-content-space-around">
                         <?php if ($_SESSION['role'] == 'admin') { ?>
-                            <!-- <li class="nav-item ">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="#" data-url="/website/admin.php">Admin</a>
-                            </li> -->
+                            </li>
                         <?php } ?>
                         <li class="nav-item ">
                             <a class="nav-link" href="#" data-url="/website/homepage.php">Home</a>
